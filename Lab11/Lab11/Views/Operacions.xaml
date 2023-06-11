@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lab11.Views.Operacions">
+    <ContentPage.Content>
+        <StackLayout>
+            <Entry Placeholder="Valor A" Text="{Binding ValorA}"></Entry>
+            <Entry Placeholder="Valor B" Text="{Binding ValorB}"></Entry>
+            <Button Text="Sumar" Command="{Binding Sumar}"/>
+            <Button Text="Restar" Command="{Binding Restar}"/>
+            <Button Text="Multiplicar" Command="{Binding Multiplicar}"/>
+            <Button Text="Dividir" Command="{Binding Dividir}"/>
+            <Label Text="La suma de los 2 numeros es: "></Label>
+            <Label  FontSize="Large"
+                Text="{Binding ResultadoSuma}"></Label>
+            <Label Text="La resta de los 2 numeros es: "></Label>
+            <Label  FontSize="Large"
+                Text="{Binding ResultadoResta}"></Label>
+            <Label Text="La multiplicacion de los 2 numeros es: "></Label>
+            <Label  FontSize="Large"
+                Text="{Binding ResultadoMultiplicar}"></Label>
+            <Label Text="La division de los 2 numeros es: "></Label>
+            <Label  FontSize="Large"
+                Text="{Binding ResultadoDividir}"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
